@@ -1,0 +1,50 @@
+% Set document language
+\usepackage[english]{babel}
+
+% Import extra math symbols
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% Use system fonts
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+% Extra math symbols
+\usepackage{mathrsfs}
+\usepackage[mathcal]{euscript}
+
+% Typesetting chemistry stuff
+\usepackage[version=4]{mhchem}
+\usepackage{chemmacros}
+
+% Typesetting units
+\usepackage{siunitx}
+
+% Microtype
+\usepackage{microtype}
+
+% Standard color definitions
+\usepackage{xcolor}
+
+% Typesetting inline fractions
+\usepackage{nicefrac}
+
+% Proper spacing (replace \left with \mleft and \right with \mright)
+\usepackage{mleftright}
+
+\definecolor{textblack}{gray}{0.125}
+\makeatletter
+\newcommand{\defaultcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+\defaultcolor{textblack}
+
+\setmainfont{STIX Two Text}
+\setmathfont{STIX Two Math}
+%\fontsize{8pt}{8pt}\selectfont
+
+\newcommand{\kb}{k_{\mathrm{B}}}
+\DeclareSIUnit\kb{\ensuremath{\mathit{\kb}}}
+\DeclareSIUnit\kbT{\ensuremath{\mathit{\kb T}}}
