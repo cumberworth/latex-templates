@@ -1,0 +1,16 @@
+\documentclass[margin=0.0cm]{standalone}
+
+\usepackage{pgf}
+\PassOptionsToPackage{RGB}{xcolor}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\usepackage{nicefrac}
+\usepackage{siunitx}
+\DeclareSIUnit{\molar}{M}
+\DeclareSIUnit{\kb}{\ensuremath{\mathit{k_\textsf{B}}}}
+\DeclareSIUnit{\kbT}{\ensuremath{\mathit{k_\textsf{B} T}}}
+\setmainfont{STIX Two Text}
+\setmathfont{STIX Two Math}
+\begin{document}
+\input{../plots/dynamics.pgf}
+\end{document}

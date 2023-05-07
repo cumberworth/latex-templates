@@ -1,0 +1,274 @@
+%% CV for data scientist applications
+
+\documentclass[10pt]{article}
+
+\input{packages}
+\input{macros}
+\input{format}
+
+\begin{document}
+
+\name{Alexander Cumberworth}
+\contact
+    {Darwin College, Silver Street, Cambridge, UK, CB3 9EU}
+    {alex@cumberworth.org}
+    {+44 7490 692862}
+
+\section{Education}
+\vspace{-0.2cm}
+
+\degree
+    {PhD}
+    {Computational Chemistry}
+    {Darwin College, University of Cambridge}
+    {2015--2019}
+    {Thesis title: Simulations of DNA origami self-assembly with a lattice model}
+    \vspace{0.3cm}
+
+\degree
+    {MSc}
+    {Genome Science and Technology}
+    {University of British Columbia}
+    {2012--2015}
+    {
+        Thesis title:
+        \begin{minipage}[t]{0.8\textwidth}
+            Implicit solvent models and free energies of solvation in the context of protein folding
+        \end{minipage}%
+    }
+    \vspace{0.3cm}
+
+\degree
+    {BSc}
+    {Combined Honours in Biochemistry and Chemistry}
+    {University of British Columbia}
+    {2008--2012}
+    {
+        Honours thesis title: 
+        \begin{minipage}[t]{0.8\textwidth}
+            The structural and dynamical basis of the autoinhibitory effects of the intrinsically disordered SRR region of the Ets-1 transcription factor
+    \end{minipage}%
+    }
+
+\section{Research experience}
+\vspace{-0.2cm}
+
+\research
+    {Marie Skłodowska-Curie Early Stage Researcher}
+    {University of Cambridge}
+    {2015--2019}
+    {
+    \item Developed, implemented from scratch, and published a new model and statistical sampling methods for a class of structural DNA nanotechnology (DNA origami)
+    \item Ran simulations with the above model and methods to study how this class of systems self-assembles (two papers in preparation)
+    \item Initiated and led an international collaboration with a research group in Sweden
+    }
+    \vspace{0.3cm}
+
+\research
+    {Genome Science and Technology Program}
+    {University of British Columbia}
+    {2012--2015}
+    {
+        \item Tested a fundamental aspect of a class of molecular models and found many popular models to be invalid in a commonly used context (implicit solvent models for protein folding)
+        \item Published two first author papers (one of which has been cited over 100 times), two middle author papers, and coauthored a textbook chapter
+    }
+    \vspace{0.3cm}
+
+\research
+    {Summer School in Computational Biology}
+    {University of Oxford}
+    {2012}
+    {
+        \item Benchmarked statistical models for predicting biomolecular structure from genomic information
+    }
+
+\section{Relevant skills}
+\vspace{-0.2cm}
+
+\skill
+    {Development and use of MCMC methods}
+    {
+        \item Estimate high dimensional integrals for molecular systems with with MCMC methods
+        \item Developed new MCMC methods, in particular new proposal distributions for sampling molecular systems
+    }
+    \vspace{0.3cm}
+
+\skill
+    {Software development}
+    {
+        \item Implemented software for two different molecular simulation programs in modern \textbf{C++} from scratch
+        \item Write modules and scripts for wrangling and analysis of large datasets with \textbf{Python}
+        \item Strive to use good practices in scientific software, including use of version control (\textbf{Git}), writing unit tests with standard frameworks, and focusing on code readability and modularity
+        \item Implemented parallelized MCMC sampling algorithms with \textbf{MPI} (using the Boost library wrapper)
+        \item Continue to learn new languages and programming methods, and have begun to learn Julia
+    }
+    \vspace{0.3cm}
+
+\skill
+    {Creation, analysis, and visualization of large datasets}
+    {
+        \item Run parallelized molecular simulations on large computer clusters that produce 100s of Gbs of data
+        \item Apply various statistical and numerical methods to molecular simulation and genomic data including PCA, clustering, bootstrapping, error propogation, hidden Markov models, and linear and non-linear optimization
+        \item Use Matplotlib and Inkscape in creating figures and diagrams for scientific reports
+    }
+    \vspace{0.3cm}
+
+\skill
+    {Oral communication}
+    {
+        \item Presented progress updates and literature reviews at regular research group meetings
+        \item Given talks and poster presentations at international meetings and conferences
+        \item Tutored students for a statistical mechanics course given at the University of Cambridge
+        \item Took part in an outreach event for children that was part of the 2018 Edinburgh Science Festival
+    }
+    \vspace{0.3cm}
+
+\skill
+    {Written communication}
+    {
+        \item Written published scientific articles (six, total citations: 196), and have created articles from scratch
+        \item Edited colleagues' journal articles and supervisor's grant proposals
+        \item Acted as a peer reviewer for scientific journals, writing detailed critical reports for several papers
+    }
+    \vspace{0.3cm}
+
+\skill
+    {Autodidacticism}
+    {
+        \item Learned how to program from working through online tutorials and reading programming books
+        \item Self-taught mathematical and physical subjects by reading and solving practice problems from textbooks, including topics related to classical and statistical mechanics, probability theory, and linear algebra
+    }
+
+\section{Publications}
+\vspace{-0.2cm}
+
+\journal
+    {\textbf{A.~Cumberworth}, A.~Reinhardt, D.~Frenkel}
+    {Lattice models and Monte Carlo methods for simulating DNA origami self-assembly}
+    {J.~Chem.~Phys.}
+    {149}
+    {234905}
+    {2018}
+    {https://www.doi.org/10.1063/1.5051835}
+    \vspace{0.3cm}
+
+\journal
+    {\textbf{A.~Cumberworth}, J.M.~Bui, J.~Gsponer}
+    {Free energies of solvation in the context of protein folding: Implications for implicit and explicit solvent models}
+    {J.~Comput.~Chem.}
+    {37}
+    {629--640}
+    {2016}
+    {https://www.doi.org/10.1002/jcc.24235}
+    \vspace{0.3cm}
+
+\journal
+    {T.~Zhao, Z.~Wang, \textbf{A.~Cumberworth}, J.~Gsponer, N.~Freitas, A.~Bouchard-Côté}
+    {Bayesian analysis of continuous time Markov chains with application to phylogenetic modelling}
+    {Baysian Anal.~}
+    {11}
+    {1203--1237}
+    {2016}
+    {https://www.doi.org/10.1214/15-BA982}
+    \vspace{0.3cm}
+
+\book
+    {F.~Heinkel, \textbf{A.~Cumberworth}, J.~Gsponer}
+    {Bridging experiments and simulations: structure calculations with a dynamical touch}
+    {Computational Approaches to Protein Dynamics: From Quantum to Coarse-Grained Methods}
+    {M.~Fuxreiter}
+    {CRC Press}
+    {403--427}
+    {2014}
+    \vspace{0.3cm}
+
+\journal
+    {\textbf{A.~Cumberworth}, G.~Lamour, M.~Babu, J.~Gsponer}
+    {Promiscuity as a functional trait: intrinsically disordered regions as central players of interactomes}
+    {Biochem J.~}
+    {454}
+    {361--369}
+    {2013}
+    {https://www.doi.org/10.1042/BJ20130545}
+    \vspace{0.3cm}
+
+\journal
+    {T.~Trudeau, R.~Nassar, \textbf{A.~Cumberworth}, E.T.C.~Wong, G.~Woollard, J.~Gsponer}
+    {Structure and intrinsic disorder in protein autoinhibition}
+    {Structure}
+    {21}
+    {332--341}
+    {2013}
+    {https://www.doi.org/10.1016/j.str.2012.12.013}
+
+\section{Selected awards and scholarships for academic performance}
+\vspace{-0.2cm}
+
+\award
+    {Marie Skłodowska-Curie Early Stage Researcher Fellowship}
+    {2015--2018}
+    {Marie Skłodowska-Curie European Training Network (COLLDENSE)}
+%    \vspace{0.3cm}
+
+\award
+    {NSERC CREATE Award}
+    {2012--2014}
+    {University of British Columbia, Genome Science and Technology Program}
+%    \vspace{0.3cm}
+
+%\award
+%    {Faculty of Science Graduate Tuition Award}
+%    {2014}
+%    {University of British Columbia, Genome Science and Technology Program}
+%%1508.28, 2957.42
+
+\award
+    {College for Interdisciplinary Studies Graduate Tuition Award}
+    {2012, 2013, 2014}
+    {University of British Columbia, Genome Science and Technology Program}
+%    \vspace{0.3cm}
+%1449.72, 2899.44
+
+\award
+    {NSERC CREATE Undergraduate Summer Studentship}
+    {2012}
+    {University of British Columbia, Genome Science and Technology Program}
+%    \vspace{0.3cm}
+
+\award
+    {Dean's Honour List}
+    {2009, 2010, 2011, 2012}
+    {University of British Columbia}
+%    \vspace{0.3cm}
+
+%\award
+%    {Sergeant Larry Young Memorial Scholarship}
+%    {2010}
+%    {Vancouver Police Department}
+%    \vspace{0.3cm}
+% 750
+
+%\award
+%    {Vancouver Police Revolver Scholarship}
+%    {2008}
+%    {Vancouver Police Department}
+%%1200
+
+\award
+    {President's Entrance Scholarship}
+    {2008}
+    {University of British Columbia}
+%    \vspace{0.3cm}
+% 1000
+
+%\award
+%    {BC Innovation Council Science Achievement Award 12}
+%    {2008}
+%    {BC Innovation Council}
+
+\section{Interests and hobbies}
+\vspace{-0.2cm}
+
+I attended and helped organize my college's yoga society classes and events during my PhD. I also enjoy photography, playing improvisational music on the guitar, reading fiction, playing video games, and cycling.
+
+\end{document}

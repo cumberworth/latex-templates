@@ -1,0 +1,40 @@
+\documentclass[12pt,final]{article}
+
+\input{packages}
+\input{macros}
+\input{format}
+
+\begin{document}
+    \pagestyle{cover}
+    \setstretch{1.08}
+
+    \begin{tikzpicture}[remember picture, overlay]
+        \node [shift={(-2.25cm,-1.75cm)},anchor=north east,align=right, inner sep=0pt, text width=9cm] at (current page.north east)
+            {
+                Alexander Cumberworth\\
+                Quellijnstraat 48 2V\\
+                1072 XT\\
+                Amsterdam\\
+                The Netherlands};
+    \end{tikzpicture}
+
+    \vspace{1cm}
+
+    % check if should use Dr.
+    1540 Broadway\\
+    24th Floor\\
+    New York, NY 10036\\[7mm]
+    \myDate\today\\[2mm]
+
+    \setstretch{1.25}
+    Dear Selection Committee:
+
+    \input{body.tex}
+
+    \vfill
+    \begin{tikzpicture}
+        \draw (0,0) node {};
+        \draw (0.7*\textwidth, 0cm) node[text width=6cm] {Yours sincerely,\\ ~ \\
+        Alexander Cumberworth};
+    \end{tikzpicture}
+\end{document}

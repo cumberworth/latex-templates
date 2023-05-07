@@ -1,0 +1,90 @@
+\makeatletter
+\newcommand{\defaultcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+\newcommand{\AMCcomment}[1]{\todo[color=green!20]{[AMC]: #1}}
+\newcommand{\AMCcommenti}[1]{\todo[inline,size=\scriptsize,color=green!20]{[AMC]:#1}\noindent}
+\newcommand{\PRcomment}[1]{\todo[color=blue!20]{[PRtW]: #1}}
+
+\newcommand{\referee}[1]{{\setlength\parskip{0pt}\begin{quote}\itshape\color{black!80!white}#1\end{quote}}\vspace{-0.5\baselineskip}}
+\newcommand{\action}{\textbf{Action: }}
+\newcommand{\inlinequote}[1]{``\textit{#1}''}
+
+\DeclareSIUnit{\kbT}{\ensuremath{\mathit{k_\mathrm{B} T}}}
+
+\newcommand{\deltad}{\delta_\mathrm{d}}
+\newcommand{\deltas}{\delta_\mathrm{s}}
+
+% Equilibrium radius
+\newcommand{\Req}{R_\mathrm{eq}}
+\newcommand{\Rmax}{R_\mathrm{max}}
+\newcommand{\Rmin}{R_\mathrm{min}}
+
+% Derivative
+\newcommand{\deriv}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+
+% Partial derivative
+\newcommand{\pderiv}[2]{\frac{\partial #1}{\partial #2}}
+
+% Exponential
+\newcommand{\expsup}[1]{\mathrm{e}^{#1}}
+
+% Boltzmann's constant
+\newcommand{\kb}{k_{\mathrm{B}}}
+
+% Dissociation constant for pair binding
+\newcommand{\Kd}{K_\mathrm{D}^\mathrm{d}}
+
+% Dissociation constant for single binding
+\newcommand{\Ks}{K_\mathrm{D}^\mathrm{s}}
+
+% Total number of filaments
+\newcommand{\Nf}{N_\mathrm{f}}
+
+% Number of scaffold filaments
+\newcommand{\Nsca}{N_\mathrm{sca}}
+
+% Number of overlaps
+\newcommand{\No}{N_\mathrm{o}}
+
+% Number of doubly bound crosslinkers
+\newcommand{\Nd}{N_\mathrm{d}}
+
+% Total number of doubly bound crosslinkers
+\newcommand{\Ndtot}{N_\text{d, tot}}
+
+% Number of doubly bound crosslinkers of overlap i
+\newcommand{\Ndi}{N_\text{d, i}}
+
+% Number of singly bound crosslinkers
+\newcommand{\Ns}{N_\mathrm{s}}
+
+% Number of singly bound sites
+\newcommand{\Nss}{N_\mathrm{ss}}
+
+% Number of doubly singly bound sites
+\newcommand{\Nb}{N_\mathrm{b}}
+
+% Number of right-pulling crosslinkers
+\newcommand{\NR}{N_\mathrm{R}}
+
+% Length of filament
+\newcommand{\Lf}{L_\mathrm{f}}
+
+% Total number of overlap sites
+\newcommand{\Ltot}{L_\mathrm{tot}}
+
+% Total number of overlap sites
+\newcommand{\ltot}{\ell_\mathrm{tot}}
+
+% Diameter of filament
+\newcommand{\Df}{\diameter_\mathrm{f}}
+
+% Sites per filament
+\newcommand{\lf}{l_\mathrm{f}}
+
+% Filament diffusion constant
+\newcommand{\DLf}{D_\mathrm{f}}
+
